@@ -9,6 +9,16 @@ h4 {
   padding: 5px;
 }
 
+.tad {
+  color: #dc3545;
+  font-family: "Bebas Neue";
+}
+
+.accordion-button:not(.collapsed) {
+  color: #fff;
+  font-family: "Bebas Neue";
+}
+
 .title {
   color: #dc3545;
   font-family: "Bebas Neue";
@@ -73,3 +83,9 @@ h4 {
   color: #dc3545;
   font-family: "Bebas Neue";
 }
+
+.accordion-button:not(.collapsed) {
+  background-color: #dc3545;
+}
+
+/* clien silder */
