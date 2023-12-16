@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Modified Cars</title>
+    <link rel="icon" href="img/1.png" type="image/gif/png">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -19,7 +20,8 @@
         <!-- navbar -->
         <nav class="navbar sticky-top bg-dark">
             <div class="container-fluid d-flex justify-content-center justify-content-sm-between">
-                <a class="navbar-brand text-center" href="#">Modified-Cars</a>
+                <a class="navbar-brand text-center" href="#"><img src="img/logo.png" alt=""
+                        class="logo">Modified-Cars</a>
                 <ul class="nav justify-content-end">
                     <li class="nav-item" id="home">
                         <a class="nav-link" href="#">HOME</a>
@@ -308,15 +310,16 @@
         <div class="title">
             <h2 class="text-center ">CLIENTS</h2>
         </div>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
                     <div class="lc-block">
                         <div id="carouselLogos" class="carousel slide pt-5 pb-4" data-bs-ride="carousel">
 
-                            <div class="carousel-inner px-5">
+                            <div class="carousel-inner px-3">
                                 <div class="carousel-item active">
-                                    <div class="row">
+                                    <div class="row icon">
+
                                         <div class="col-6 col-lg-2 align-self-center">
                                             <img class="d-block w-100 px-3 mb-3" src="img/bmw1.png" alt="">
                                         </div>
@@ -339,8 +342,8 @@
 
                                 </div>
                                 <div class="carousel-item">
-                                    <div class="row">
-                                        <div class="col-6 col-lg-2 align-self-center">
+                                    <div class="row icon">
+                                        <div class="col-6 col-lg-2 align-self-center​​">
                                             <img class="d-block w-100 px-3 mb-3" src="img/bmw1.png" alt="">
                                         </div>
                                         <div class="col-6 col-lg-2  align-self-center">
@@ -359,7 +362,6 @@
                                             <img class="d-block w-100 px-3  mb-3" src="img/sabaru1.png" alt="">
                                         </div>
                                     </div>
-
                                 </div>
                             </div>
                             <div class="w-100 px-3 text-center mt-4">
@@ -374,33 +376,65 @@
                                     <span class="visually-hidden">Next</span>
                                 </a>
                             </div>
-
-
                         </div>
-                    </div><!-- /lc-block -->
-                </div><!-- /col -->
+                    </div>
+                </div>
             </div>
         </div>
-
-
-
     </section>
+    <!-- end client -->
+    <!-- contact -->
+    <section id="contact">
+        <div class="container">
+            <div class="row box">
+                <div class="col-lg-6 col-md-6 align-items-sm-stretch">
+                    <form action="/action_page.php" class="m-5">
+                        <span>
+                            <h4>Get In TOuch</h4>
+                        </span>
+                        <div class="mb-3 mt-3 d-flex justify-content-between gap-5">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter Fist Name"
+                                name="fname">
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name"
+                                name="lname">
+                        </div>
+
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="email" placeholder="Enter Email">
+                        </div>
+                        <div class="mb-3">
+                            <input type="text" class="form-control" id="Subjectl" placeholder="Enter Your Subjectl">
+                        </div>
+                        <div class="mb-3">
+                            <label for="comment" class="m-3">Comments:</label>
+                            <textarea class="form-control" rows="4" id="comment" name="text"></textarea>
+                        </div>
+                        <div class="container mt-3 d-flex justify-content-end">
+                            <button type="submit" class="btn btn-danger">Submit</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 col-md-6 align-items-sm-stretch">
+                    <div class="ct-img">
+                        <img src="img/ct.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- footer -->
-    <footer class=" bg-dark text-light ">
+    <footer class=" bg-dark text-light mt-5 ">
         <div class="text-center py-3">
             <div class="container-fluid ">
                 <div class="footer">
                     <P>Modified Cars</P>
-                    <p>Drive Beyond. Drive with Modified Cars Shop.</p>
+
                     <div class="d-flex justify-content-center">
                         <div class="line"></div>
                     </div>
                     <section class="md-3">
-                        <a href="home">HOME</a>
-                        <a href="home">ABOUT</a>
-                        <a href="home">PORTFOLIO</a>
-                        <a href="home">CLIENTS</a>
-                        <a href="home">CONTACT</a>
+                        <p>Drive Beyond. Drive with Modified Cars Shop.</p>
                     </section>
 
                     <div class="line w-100"></div>
@@ -422,16 +456,6 @@
     </footer>
 
     <!-- end footer -->
-
-
-
-
-
-
-
-
-
-
 
     <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
